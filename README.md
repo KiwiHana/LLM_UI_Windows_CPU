@@ -3,9 +3,13 @@ Run LLM UI Application on Windows 11 CPU
 
 
 conda create -n llm python=3.9
+
 conda activate llm
+
 pip install --pre --upgrade bigdl-llm[all]
+
 pip install gradio mdtex2html
+
 python LLM_demo_v1.0.py
 
 
