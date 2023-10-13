@@ -8,7 +8,7 @@ conda activate llm
 
 pip install --pre --upgrade bigdl-llm[all]
 
-pip install gradio mdtex2html
+pip install gradio==3.41.1 mdtex2html
 
 python LLM_demo_v1.0.py
 ```
