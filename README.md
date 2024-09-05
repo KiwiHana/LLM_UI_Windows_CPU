@@ -31,4 +31,8 @@ checkpoint
 
 ![image](https://github.com/KiwiHana/LLM_UI_Windows_CPU/assets/102839943/ac5d521c-5aff-468a-b688-1f7c907f73cb)
 
+绑定核运行的方法。打开cmd，运行
+powershell "$app = Start-Process -FilePath "app.exe -PassThru; $app.ProcessorAffinity = 0x1F"
+
+其中 0x1F的意思是使用前面5个核运行，转换成二进制是 11111。
 
